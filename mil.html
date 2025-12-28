@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kabo3a BMW – Directeur</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#000,#111,#000);
+    color:white;
+}
+
+/* HEADER */
+header{
+    background:rgba(0,0,0,0.85);
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    color:#1e90ff;
+}
+
+header a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+header a:hover{
+    color:#1e90ff;
+}
+
+/* PROFILE */
+.profile{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 10%;
+}
+
+.card{
+    background:#111;
+    display:flex;
+    gap:40px;
+    padding:40px;
+    border-radius:20px;
+    max-width:900px;
+    box-shadow:0 20px 50px rgba(30,144,255,0.3);
+    animation:fadeUp 1.5s ease;
+}
+
+/* IMAGE */
+.card img{
+    width:300px;
+    height:380px;
+    object-fit:cover;
+    border-radius:20px;
+    border:3px solid #1e90ff;
+}
+
+/* INFO */
+.info h2{
+    font-size:34px;
+    margin-bottom:10px;
+    color:#1e90ff;
+}
+
+.info h4{
+    font-weight:400;
+    opacity:0.8;
+    margin-bottom:20px;
+}
+
+.info p{
+    line-height:1.7;
+    opacity:0.9;
+    margin-bottom:20px;
+}
+
+.stats{
+    display:flex;
+    gap:20px;
+}
+
+.stat{
+    background:black;
+    padding:15px 20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.stat h3{
+    color:#1e90ff;
+    font-size:22px;
+}
+
+.stat span{
+    font-size:14px;
+    opacity:0.7;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+    opacity:0.7;
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .card img{
+        margin:auto;
+    }
+
+    .stats{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Kabo3a BMW</h1>
+    <a href="index.html">← Retour au site</a>
+</header>
+
+<section class="profile">
+    <div class="card">
+        <!-- IMAGE DU DIRECTEUR -->
+        <img src="mil.jpg" alt="Directeur Général">
+
+        <!-- INFORMATIONS -->
+        <div class="info">
+            <h2>kabo3a le milliardair</h2>
+            <h4>Directeur Général & Investisseur</h4>
+
+            <p>
+                Mil Aissa est un directeur visionnaire et entrepreneur à succès,
+                reconnu pour son leadership stratégique et sa capacité à développer
+                des projets d’envergure dans le secteur automobile de luxe.
+            </p>
+
+            <p>
+                Grâce à une vision moderne et innovante, il a su positionner
+                <strong>Kabo3a BMW</strong> comme une référence en matière de performance,
+                de qualité et d’excellence.
+            </p>
+
+            <div class="stats">
+                <div class="stat">
+                    <h3>20+</h3>
+                    <span>Années d’expérience</span>
+                </div>
+                <div class="stat">
+                    <h3>BMW</h3>
+                    <span>Partenaire premium</span>
+                </div>
+                <div class="stat">
+                    <h3>Leader</h3>
+                    <span>Vision & innovation</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 Kabo3a BMW – Direction Générale
+</footer>
+
+</body>
+</html>
